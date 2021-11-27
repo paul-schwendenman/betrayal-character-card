@@ -20,7 +20,7 @@ import characters from "$lib/characters";
 </script>
 
 <svelte:head>
-	<title>{character.name}</title>
+	<title>Betrayal at the House on the Hill: {character.name}</title>
 </svelte:head>
 
 <Character {...character}></Character>

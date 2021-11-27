@@ -2,6 +2,10 @@
 	import characters from '$lib/characters';
 </script>
 
+<svelte:head>
+	<title>Betrayal at the House on the Hill: Characters</title>
+</svelte:head>
+
 <div class="content">
 	<h1>Characters</h1>
 	<ul>
