@@ -355,7 +355,7 @@ export default [
 			},
 			sanity: {
 				values: ['💀', 4, 4, 4, 5, 6, 7, 8, 8],
-				startingIndex: 5,
+				startingIndex: 3,
 			},
 			knowledge: {
 				values: ['💀', 4, 5, 5, 5, 5, 6, 6, 7],
