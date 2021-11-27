@@ -18,4 +18,8 @@
 		margin: auto;
 		max-width: 720px;
 	}
+
+	ul {
+		list-style: none;
+	}
 </style>
