@@ -24,7 +24,7 @@
 		//box.scroll(0, parseInt(index * digitHeight));
 		box.scroll({
 			left: 0,
-			top: parseInt(index * digitHeight),
+			top: index * digitHeight,
 			behavior: 'smooth'
 		});
 		current = index;
@@ -38,7 +38,7 @@
 </script>
 
 <div class="number-picker">
-	<button on:click={scrollToIndex(current - 1)} disabled={current < 1} class="selector">&minus;</button>
+	<button on:click={() => scrollToIndex(current - 1)} disabled={current < 1} class="selector">&minus;</button>
 
 	<div class="digit-wrapper">
 		<ul bind:this={box} class="digits" on:scroll={onScroll}>
@@ -50,7 +50,7 @@
 		<span class="half half-right"></span>
 	</div>
 
-	<button on:click={scrollToIndex(current + 1)} disabled={current === numbers.length - 1} class="selector">&plus;</button>
+	<button on:click={() => scrollToIndex(current + 1)} disabled={current === numbers.length - 1} class="selector">&plus;</button>
 </div>
 
 <style>
